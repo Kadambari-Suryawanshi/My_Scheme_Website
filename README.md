@@ -6,18 +6,18 @@ My Scheme is a responsive frontend web application that provides structured info
 The purpose of this project is to create a clean and user-friendly interface where users can easily browse, search, and understand different government schemes including their eligibility, benefits, and required documents.
 This project currently includes only frontend implementation using modern web technologies.
 
-# 🚀 Live Demo
+### 🚀 Live Demo
 
 👉 Link : https://earnest-chimera-850587.netlify.app/
 
-# 🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 HTML5 – Structure of the website
 CSS3 – Styling and responsive design
 JavaScript – Basic interactivity
 VS Code – Development tool
 
-# ✨ Features
+### ✨ Features
 
 Responsive homepage layout
 Category-based scheme display
@@ -27,7 +27,7 @@ Clean and modern UI
 Mobile-friendly design
 
 
-# 📈 Future Improvements
+### 📈 Future Improvements
 
 Backend integration (Node.js / Java / etc.)
 Database connectivity
@@ -35,7 +35,7 @@ User authentication system
 Admin dashboard
 AI-based scheme recommendation
 
-# 💡 What I Learned
+### 💡 What I Learned
 
 Designing responsive web layouts
 Improving UI/UX structure
