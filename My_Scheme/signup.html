@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sign Up - DigiLocker</title>
+
+<style>
+    body {
+        font-family: Arial;
+        background: #f4f7fb;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    /* LOGO */
+    .logo {
+        width: 280px;
+        margin-bottom: 20px;
+    }
+
+    /* MAIN BOX */
+    .container {
+        width: 420px;
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        border-bottom: 5px solid #4a3aff;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    h2 b {
+        color: #0066cc;
+    }
+
+    /* INPUTS */
+    .input-box,
+    select {
+        width: 100%;
+        padding: 10px 12px;
+        margin: 10px 0;
+        font-size: 15px;
+        border: 1px solid #d3d3d3;
+        border-radius: 6px;
+        outline: none;
+        background: #f6f7f9;
+    }
+
+    /* DOB SECTION */
+    .dob-section {
+        display: flex;
+        gap: 10px;
+    }
+
+    /* BUTTONS */
+    .otp-btn {
+        width: 100%;
+        padding: 10px;
+        background: #0b62d4;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 15px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+    .verify-btn {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        background: #67b583;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    a {
+        color: #0b62d4;
+        text-decoration: none;
+    }
+
+    label {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 8px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- LOGO OUTSIDE BOX -->
+<img src="assets/login_logo.png" class="logo" alt="Logo">
+
+<!-- CARD -->
+<div class="container">
+
+    <h2>Sign up for <b>DigiLocker</b></h2>
+
+    <input type="text" class="input-box" placeholder="Mobile Number*">
+
+    <button class="otp-btn">Generate OTP</button>
+
+    <input type="text" class="input-box" placeholder="Full Name*">
+
+    <label>Date of Birth</label>
+    <div class="dob-section">
+        <input type="text" class="input-box" placeholder="dd*">
+        <input type="text" class="input-box" placeholder="mm*">
+        <input type="text" class="input-box" placeholder="yyyy*">
+    </div>
+
+    <select>
+        <option>Select Gender*</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+    </select>
+
+    <input type="text" class="input-box" placeholder="Username*">
+    <input type="password" class="input-box" placeholder="PIN*">
+    <input type="password" class="input-box" placeholder="Confirm PIN*">
+
+    <label>
+        <input type="checkbox">
+        I consent to <a href="#">terms of use.</a>
+    </label>
+
+    <button class="verify-btn">Verify</button>
+
+    <p style="margin-top:20px; text-align:center;">
+        <a href="login.html">Sign in to an existing account</a>
+    </p>
+
+</div>
+
+</body>
+</html>

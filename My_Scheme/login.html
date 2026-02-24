@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DigiLocker UI</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f9fc;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+
+        .container {
+            width: 400px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 300px;
+            background-color: transparent;
+            margin-bottom: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 18px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 8px 0;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            color: #007bff;
+        }
+
+        .tab.active {
+            background: #007bff;
+            color: white;
+        }
+
+        .input-box, .select-box {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .forgot {
+            text-align: right;
+            margin-top: -5px;
+            font-size: 14px;
+        }
+
+        .forgot a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .checkbox-area {
+            margin: 12px 0;
+            font-size: 14px;
+        }
+
+        .select-box {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            outline: none;
+            background-color: #fff;
+            appearance: none;          /* Removes default browser arrow */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            cursor: pointer;
+        }
+
+        /* Custom arrow */
+        .select-box {
+            background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><polygon points='0,0 20,0 10,10'/></svg>");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 14px;
+            width: 100%;
+        }
+
+
+        .signin-btn {
+            width: 100%;
+            background: #2d8548;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .signup-text {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        .signup-text a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        h3 {
+            white-space: nowrap;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Logo OUTSIDE box (top-center) -->
+        <img src="assets/login_logo.png" class="logo" alt="Logo">
+
+        <!-- White Card Box -->
+        <div class="card">
+
+            <h3>Sign In to your account via <b style="color:#0066cc;">DigiLocker</b></h3>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="tab active" data-target="mobile">Mobile</div>
+                <div class="tab" data-target="username">Username</div>
+                <div class="tab" data-target="others">Others</div>
+            </div>
+
+            <!-- CONTENT SECTIONS -->
+            <div id="mobile" class="content-section">
+                <input type="text" class="input-box" placeholder="Mobile*">
+                <input type="password" class="input-box" placeholder="PIN*">
+            </div>
+
+            <div id="username" class="content-section" style="display:none;">
+                <input type="text" class="input-box" placeholder="Username*">
+                <input type="password" class="input-box" placeholder="PIN*">
+            </div>
+
+            <div id="others" class="content-section" style="display:none;">
+                <select class="select-box">
+                    <option>Select ID</option>
+                    <option>Aadhaar</option>
+                    <option>PAN</option>
+                    <option>Driving License</option>
+                </select>
+
+                <input type="text" class="input-box" placeholder="Enter ID / Number*">
+                <input type="password" class="input-box" placeholder="PIN*">
+            </div>
+
+            <!-- Forgot PIN -->
+            <div class="forgot">
+                <a href="#">Forgot security PIN?</a>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="checkbox-area">
+                <input type="checkbox"> PIN less authentication <br>
+                <input type="checkbox"> I consent to <a href="#" style="color:#007bff;">terms of use</a>.
+            </div>
+
+            <!-- Sign In Button -->
+            <button class="signin-btn">Sign In</button>
+
+            <!-- Sign Up -->
+            <div class="signup-text">
+                 New user? <a href="signup.html">Sign up</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT FOR TAB SWITCHING -->
+    <script>
+        const tabs = document.querySelectorAll(".tab");
+        const sections = document.querySelectorAll(".content-section");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", function () {
+
+                // Remove active from all
+                tabs.forEach(t => t.classList.remove("active"));
+                sections.forEach(sec => sec.style.display = "none");
+
+                // Add active to clicked tab
+                this.classList.add("active");
+
+                // Show correct section
+                const target = this.getAttribute("data-target");
+                document.getElementById(target).style.display = "block";
+            });
+        });
+    </script>
+
+</body>
+</html>
