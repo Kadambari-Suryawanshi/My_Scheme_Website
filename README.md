@@ -19,28 +19,28 @@ VS Code – Development tool.
 
 ### ✨ Features
 
-Responsive homepage layout
-Category-based scheme display
-Search bar interface
-Scheme details page
-Clean and modern UI
-Mobile-friendly design
+Responsive homepage layout,
+Category-based scheme display,
+Search bar interface,
+Scheme details page,
+Clean and modern UI,
+Mobile-friendly design.
 
 
 ### 📈 Future Improvements
 
-Backend integration (Node.js / Java / etc.)
-Database connectivity
-User authentication system
-Admin dashboard
-AI-based scheme recommendation
+Backend integration (Node.js),
+Database connectivity,
+User authentication system,
+Admin dashboard,
+AI-based scheme recommendation.
 
 ### 💡 What I Learned
 
-Designing responsive web layouts
-Improving UI/UX structure
-Organizing project folders properly
-Writing clean and structured frontend code
+Designing responsive web layouts,
+Improving UI/UX structure,
+Organizing project folders properly,
+Writing clean and structured frontend code.
 
 
 
