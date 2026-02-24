@@ -1,6 +1,6 @@
 # 🌟 My Scheme – Government Scheme Information Portal (Frontend)
 
-# 📌 Project Description
+### 📌 Project Description
 
 My Scheme is a responsive frontend web application that provides structured information about various government schemes.
 The purpose of this project is to create a clean and user-friendly interface where users can easily browse, search, and understand different government schemes including their eligibility, benefits, and required documents.
