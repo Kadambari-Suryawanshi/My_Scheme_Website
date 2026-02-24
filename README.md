@@ -12,10 +12,10 @@ This project currently includes only frontend implementation using modern web te
 
 ### 🛠️ Tech Stack
 
-HTML5 – Structure of the website
-CSS3 – Styling and responsive design
-JavaScript – Basic interactivity
-VS Code – Development tool
+HTML5 – Structure of the website,
+CSS3 – Styling and responsive design,
+JavaScript – Basic interactivity,
+VS Code – Development tool.
 
 ### ✨ Features
 
